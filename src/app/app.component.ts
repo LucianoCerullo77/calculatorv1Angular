@@ -11,4 +11,7 @@ export class AppComponent {
   operationB: number = 0;
   result: number = 0;
 
+  sum():void{
+    this.result = this.operationA + this.operationB
+  }
 }
