@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'calculator';
+  title = 'Calculator Testing with Angular';
+  operationA: number = 0;
+  operationB: number = 0;
+  result: number = 0;
+
 }
