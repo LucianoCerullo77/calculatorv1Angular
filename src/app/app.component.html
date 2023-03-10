@@ -1,9 +1,25 @@
 <div class="container">
   <h1>{{ title }}</h1>
-  <div class="container">
-    <h2>Operation A</h2>
-  </div>
-  <div class="container">
-    <h2>Operation B</h2>
-  </div>
+  <form>
+    <div class="form-group">
+      <label for="">Operation A</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Enter the First Number"
+        [(ngModel)]="operationA"
+        name="operationA"
+      />
+    </div>
+    <div class="form-group">
+      <label for="">Operation B</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Enter the Second Number"
+        [(ngModel)]="operationB"
+        name="operationB"
+      />
+    </div>
+  </form>
 </div>
