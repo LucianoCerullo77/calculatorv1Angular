@@ -6,9 +6,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent {
-  operationA: number = 0;
-  operationB: number = 0;
-  result: number = 0;
+  operationA: number;
+  operationB: number;
+  result: number;
 
   @Output() sumResult = new EventEmitter<number>();
 

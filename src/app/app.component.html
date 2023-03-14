@@ -1,5 +1,5 @@
 <div class="container">
   <h1>{{ title }}</h1>
   <app-form (sumResult)="proccessResult($event)"></app-form>
-  <p>Result : {{ result }}</p>
+  <app-result [sonResult]="fatherResult"></app-result>
 </div>
