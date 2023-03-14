@@ -7,11 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calculator Testing with Angular';
-  operationA: number = 0;
-  operationB: number = 0;
-  result: number = 0;
-
-  sum():void{
-    this.result = this.operationA + this.operationB
-  }
 }
