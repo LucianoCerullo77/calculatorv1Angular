@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -10,7 +10,10 @@ export class FormComponent {
   operationB: number = 0;
   result: number = 0;
 
+  @Output() sumResult = new EventEmitter<number>();
+
   sum(): void {
-    this.result = this.operationA + this.operationB;
+    let result = this.operationA + this.operationB;
+    this.sumResult.emit(result);
   }
 }

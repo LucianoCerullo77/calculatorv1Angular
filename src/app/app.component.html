@@ -1,29 +1,5 @@
 <div class="container">
   <h1>{{ title }}</h1>
-  <form>
-    <div class="form-group">
-      <label for="">Operation A</label>
-      <input
-        type="number"
-        class="form-control"
-        placeholder="Enter the First Number"
-        [(ngModel)]="operationA"
-        name="operationA"
-      />
-    </div>
-    <div class="form-group">
-      <label for="">Operation B</label>
-      <input
-        type="number"
-        class="form-control"
-        placeholder="Enter the Second Number"
-        [(ngModel)]="operationB"
-        name="operationB"
-      />
-    </div>
-    <button class="btn btn-primary" type="submit" (click)="sum()">
-      Show Result
-    </button>
-  </form>
+  <app-form (sumResult)="proccessResult($event)"></app-form>
   <p>Result : {{ result }}</p>
 </div>

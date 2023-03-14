@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calculator Testing with Angular';
+  result = 0;
+
+  proccessResult(result: number) {
+    this.result = result;
+  }
 }
